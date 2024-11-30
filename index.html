@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Converse Chuck Taylor All Star</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArtVault Critique Hub</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="product-container">
-        <div class="sale-badge">SALE</div>
-        <div class="product-title">CONVERSE CHUCK TAYLOR ALL STAR LOW TOP</div>
+  <header class="site-header">
+    <h1 class="logo">ArtHub</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="product-details">
-            <div class="product-image">
-                <img src="image/th.jpeg" alt="Converse Shoe">
-            </div>
+  <main class="homepage">
+    <section class="hero-section">
+      <h2>Discover & Critique Art Like Never Before</h2>
+      <p>Join our community of artists and art lovers, engage with stunning works, and leave meaningful feedback.</p>
+      <a href="signup.html" class="cta-button">Get Started</a>
+    </section>
 
-            <div class="product-info">
-                <div class="price">$65.00</div>
-                <div class="free-shipping">FREE SHIPPING</div>
-                <p class="description">Ready to dress up or down, these classic canvas Chucks are an everyday wardrobe staple.</p>
-                <a href="" class="more-info">More information &rarr;</a>
-
-                <div class="color-options">
-                    <span class="color-black"></span>
-                    <span class="color-blue"></span>
-                    <span class="color-red"></span>
-                    <span class="color-yellow"></span>
-                    <span class="color-green"></span>
-                    <span class="color-brown"></span>
-                </div>
-            </div>
-
-            <div class="product-specs">
-                <strong>PRODUCT DETAILS</strong>
-                <ul>
-                    <li>Lightweight, durable canvas sneaker</li>
-                    <li>Lightly padded footbed for added comfort</li>
-                    <li>Iconic Chuck Taylor ankle patch</li>
-                </ul>
-            </div>
+    <section class="art-section">
+      <h3>Previous Artworks</h3>
+      <div class="art-gallery">
+        <div class="art-item">
+          <a href="critique1.html">
+            <img src="the.jpeg" alt="Art Piece 1">
+            <p class="art-title">Art Title 1</p>
+          </a>
         </div>
+        <div class="art-item">
+          <a href="critique.html?art=2">
+            <img src="th.jpeg" alt="Art Piece 2">
+            <p class="art-title">Art Title 2</p>
+          </a>
+        </div>
+      </div>
+    </section>
 
-        <a href="" class="add-to-cart">ADD TO CART</a>
-    </div>
+    <section class="upcoming-section">
+      <h3>Upcoming Releases</h3>
+      <div class="upcoming-item">
+        <p>Art Piece 3 - Countdown: <span class="timer">00:00:00</span></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 ArtVault Critique Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

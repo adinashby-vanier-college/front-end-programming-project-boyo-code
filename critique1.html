@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Critique Artwork</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="logo">ArtHub</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Artwork Critique</h2>
+      <div class="art-display">
+        <img id="art-image" src="the.jpeg" alt="Selected Art">
+        <p id="art-title">Title: </p>
+      </div>
+      <div class="critique-section">
+        <h3>Critiques</h3>
+        <label for="lname">Light and Shadow: Light used to create contrast:</label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Shape and Form: </label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Color:</label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Unity and Harmony:</label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Intellectual Engagement: </label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Craftsmanship: </label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Story or Emotion: </label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Cultural or Historical Context:</label>
+        <input type="number" min="0" max="10" step="1" /><br>
+        <label for="lname">Skill: </label>
+        <input type="number" min="0" max="10" step="1" /><br><br>
+        <ul id="critique-list">
+          <!-- Previous critiques will be loaded here dynamically -->
+        </ul>
+        <textarea id="new-critique" placeholder="Write your critique here..."></textarea>
+        <button id="submit-critique">Submit Critique</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 ArtVault Critique Hub. All Rights Reserved.</p>
+  </footer>
+
+  <script src="critique.js"></script>
+</body>
+</html>
