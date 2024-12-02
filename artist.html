@@ -2,51 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artist Dashboard - ArtVault Critique Hub</title>
+  <title>Artist Upload</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Artist Dashboard</h1>
-    <nav>
+  <header class="site-header">
+    <h1 class="logo">ArtHub</h1>
+    <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="artist.html">My Dashboard</a></li>
-        <li><a href="logout.html">Logout</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="upload-art">
-      <h2>Upload New Art</h2>
-      <form>
+  <main class="artist-page">
+    <section class="upload-section">
+      <h2>Upload Your Artwork</h2>
+      <form id="artwork-form">
         <label for="art-title">Art Title:</label>
-        <input type="text" id="art-title" name="art-title" required>
-        
-        <label for="art-file">Upload Art:</label>
-        <input type="file" id="art-file" name="art-file" required>
-        
-        <label for="release-date">Set Release Date:</label>
-        <input type="date" id="release-date" name="release-date" required>
-        
-        <button type="submit">Upload Art</button>
+        <input type="text" id="art-title" required>
+
+        <label for="art-description">Description:</label>
+        <textarea id="art-description" rows="5" required></textarea>
+
+        <label for="release-date">Release Date:</label>
+        <input type="date" id="release-date" required>
+
+        <label for="art-file">Upload Artwork:</label>
+        <input type="file" id="art-file" accept="image/*" required>
+
+        <button type="submit">Upload</button>
       </form>
     </section>
 
-    <section class="engagement-stats">
-      <h2>Engagement Overview</h2>
-      <p>Number of Followers: <span id="followers-count">0</span></p>
-      <p>Total Views on Art: <span id="views-count">0</span></p>
+    <section class="uploaded-artworks">
+      <h3>Your Uploaded Artworks</h3>
+      <ul id="artwork-list">
+        <!-- Uploaded artworks will be displayed here -->
+      </ul>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2024 ArtVault Critique Hub</p>
+  <footer class="site-footer">
+    <p>&copy; 2024 ArtHub. All Rights Reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
+  <script src="javaScript/script.js"></script>
 </body>
 </html>

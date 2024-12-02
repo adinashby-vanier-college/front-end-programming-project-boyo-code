@@ -13,47 +13,91 @@
     <nav class="main-nav">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+     <!-- Login and Sign Up Section -->
+     <section class="auth-section">
+      <button onclick="location.href='login.html'" class="auth-btn">Login</button>
+      <button onclick="location.href='#signup'" class="auth-btn">Sign Up</button>
+     </section>
   </header>
 
   <main class="homepage">
     <section class="hero-section">
       <h2>Discover & Critique Art Like Never Before</h2>
       <p>Join our community of artists and art lovers, engage with stunning works, and leave meaningful feedback.</p>
-      <a href="signup.html" class="cta-button">Get Started</a>
+ 
     </section>
 
     <section class="art-section">
-      <h3>Previous Artworks</h3>
+      <h3>TOP ARTworks</h3>
       <div class="art-gallery">
         <div class="art-item">
           <a href="critique1.html">
-            <img src="the.jpeg" alt="Art Piece 1">
-            <p class="art-title">Art Title 1</p>
+            <img src="image/ef.jpeg" alt="Art Piece 1">
+            <p class="art-title">The Enchanted Forest</p>
           </a>
         </div>
         <div class="art-item">
-          <a href="critique.html?art=2">
-            <img src="th.jpeg" alt="Art Piece 2">
-            <p class="art-title">Art Title 2</p>
+          <a href="critique1.html">
+            <img src="image/the.jpeg" alt="Art Piece 2">
+            <p class="art-title">PRIDE</p>
           </a>
         </div>
       </div>
-    </section>
-
-    <section class="upcoming-section">
-      <h3>Upcoming Releases</h3>
-      <div class="upcoming-item">
-        <p>Art Piece 3 - Countdown: <span class="timer">00:00:00</span></p>
+      <div class="art-gallery">
+        <div class="art-item">
+          <a href="critique1.html">
+            <img src="image/th.jpeg" alt="Art Piece 1">
+            <p class="art-title">THE ENHANCEMENT</p>
+          </a>
+        </div>
+        <div class="art-item">
+          <a href="critique1.html">
+            <img src="image/tm2.jpeg" alt="Art Piece 2">
+            <p class="art-title">URBAN DREAMS</p>
+          </a>
+        </div>
       </div>
+     
     </section>
+    <section class="hero">
+      <h2 id="about">About Us</h2>
+      <p>Discover, Create, and Critique – ArtHub the ultimate platform for artists and art lovers.</p>
+  </section>
+  <hr>
+  <hr>
+  <section>
+      <h3>Our Mission</h3>
+      <p>We aim to bring artists and art enthusiasts together to celebrate creativity and innovation. By providing a space for artists to publish their work and receive valuable feedback, we empower them to grow and succeed.</p>
+  </section>
+  <hr>
+  <hr>
+  
+  <section class="hero">
+    <h2 id="contact">Contact Us</h2>
+    <p>We’d love to hear from you! Use the form below to get in touch with us.</p>
+</section>
+<section>
+    <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form>
+</section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; 2024 ArtVault Critique Hub. All Rights Reserved.</p>
+    <p>&copy; 2024 ArtHub. All Rights Reserved.</p>
   </footer>
 
   <script src="script.js"></script>
