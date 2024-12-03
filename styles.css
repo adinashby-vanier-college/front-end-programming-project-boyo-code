@@ -1,0 +1,255 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f3f4f6, #d1d5db);
+    color: #333;
+}
+
+header {
+    background: #0f0d2a;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.Picture{
+    border-radius: 50%;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    margin-right: 300px;
+    margin-left: -300px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0f0d2a;
+    padding: 1rem;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar a {
+    display: block;
+    margin: 1rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.sidebar a:hover {
+    color: #e9e8f4;
+    background-color: #6c63ff;
+    text-decoration: none;
+    border-radius: 10%;
+}
+
+/* Section Styles */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#home {
+    background: linear-gradient(135deg, #6c63ff, #4338ca);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+#home p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+#home .btn {
+    padding: 0.8rem 2rem;
+    background: #fff;
+    color: #6c63ff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#home .btn:hover {
+    background: #6c63ff;
+    color: #fff;
+}
+
+#about, #skills, #projects, #contact {
+    background: #fff;
+    margin: 2rem 10rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 1rem;
+}
+img{
+    width:400px
+}
+
+/* About Section Styling */
+#about {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#about p.text-muted {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+#about h3 {
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+#about .badge {
+    font-size: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#about .badge:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+
+/* General styling for the contact section */
+#contact {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 50px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Center-align the title */
+#contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40; /* Darker text color */
+    margin-bottom: 30px;
+}
+
+/* Style the form labels */
+#contact .form-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #495057; /* Slightly muted text color */
+}
+
+/* Add spacing and customization to form fields */
+#contact .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+}
+
+/* Add hover and focus effects */
+#contact .form-control:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 4px rgba(108, 117, 125, 0.5);
+}
+
+/* Style the submit button */
+#contact .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#contact .btn-primary:hover {
+    background-color: #0f0d2a;
+    color: #eaeef3;
+}
+
+
+
+
+footer {
+    background: #0f0d2a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Buttons and Links */
+a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Utility */
+strong {
+    color: #444;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}

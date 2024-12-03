@@ -1,105 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArtVault Critique Hub</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-  <header class="site-header">
-    <h1 class="logo">ArtHub</h1>
-    <nav class="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-     <!-- Login and Sign Up Section -->
-     <section class="auth-section">
-      <button onclick="location.href='login.html'" class="auth-btn">Login</button>
-      <button onclick="location.href='#signup'" class="auth-btn">Sign Up</button>
-     </section>
-  </header>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="https://www.linkedin.com/in/dylan-nchungong-840b5133b/" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://github.com/boyo-code" target="_blank">GitHub</a>
+       
+    </div>
 
-  <main class="homepage">
-    <section class="hero-section">
-      <h2>Discover & Critique Art Like Never Before</h2>
-      <p>Join our community of artists and art lovers, engage with stunning works, and leave meaningful feedback.</p>
- 
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+              <img src="image/pp.jpeg.jpg" alt="Pro Picture" class="Picture">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Hey, I'm DYLAN NCHUNGON</h1>
+        <p>A Passionate Software Developer with expertise in Frontend, Backend, and Database Management.</p>
+        <a href="#projects" class="btn">Projects</a>
     </section>
 
-    <section class="art-section">
-      <h3>TOP ARTworks</h3>
-      <div class="art-gallery">
-        <div class="art-item">
-          <a href="critique1.html">
-            <img src="image/ef.jpeg" alt="Art Piece 1">
-            <p class="art-title">The Enchanted Forest</p>
-          </a>
-        </div>
-        <div class="art-item">
-          <a href="critique1.html">
-            <img src="image/the.jpeg" alt="Art Piece 2">
-            <p class="art-title">PRIDE</p>
-          </a>
-        </div>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-4">About Me</h2>
+          <p class="text-center text-muted mb-5">
+              Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.
+          </p>
+          <div class="row">
+              <!-- Introduction Section -->
+              <div class="col-lg-6">
+                  <h3 class="mb-3">Get to know me!</h3>
+                  <p>
+                      I'm a <strong>Software Development Student</strong> passionate about learning and building projects that solve real-world problems. I enjoy exploring new technologies and improving my skills in programming, system design, and web development. 
+                  </p>
+                  <p>
+                      As an aspiring software developer, I am focused on strengthening my technical expertise and contributing to collaborative projects. Feel free to connect with me on 
+                      <a href="https://www.linkedin.com/in/dylan-nchungong-840b5133b/" class="text-decoration-none text-primary">LinkedIn</a> or explore my work on 
+                      <a href="https://github.com/boyo-code" class="text-decoration-none text-primary">GitHub</a>.
+                  </p>
+              </div>
+              <!-- Skills Section -->
+              <div class="col-lg-6">
+                  <h3 class="mb-3">My Skills</h3>
+                  <div class="d-flex flex-wrap">
+                    <span class="badge bg-light text-dark m-2 p-3">Python</span>
+                    <span class="badge bg-light text-dark m-2 p-3">Java</span>
+                    <span class="badge bg-light text-dark m-2 p-3">JavaScript</span>
+                    <span class="badge bg-light text-dark m-2 p-3">SQL</span>
+                    <span class="badge bg-light text-dark m-2 p-3">Git</span>
+                    <span class="badge bg-light text-dark m-2 p-3">GitHub</span>
+                    <span class="badge bg-light text-dark m-2 p-3">Linux</span>
+                    <span class="badge bg-light text-dark m-2 p-3">Agile Development</span>
+                    <span class="badge bg-light text-dark m-2 p-3">Problem Solving</span>
+                </div>
+              </div>
+          </div>
       </div>
-      <div class="art-gallery">
-        <div class="art-item">
-          <a href="critique1.html">
-            <img src="image/th.jpeg" alt="Art Piece 1">
-            <p class="art-title">THE ENHANCEMENT</p>
-          </a>
-        </div>
-        <div class="art-item">
-          <a href="critique1.html">
-            <img src="image/tm2.jpeg" alt="Art Piece 2">
-            <p class="art-title">URBAN DREAMS</p>
-          </a>
-        </div>
-      </div>
-     
-    </section>
-    <section class="hero">
-      <h2 id="about">About Us</h2>
-      <p>Discover, Create, and Critique – ArtHub the ultimate platform for artists and art lovers.</p>
   </section>
-  <hr>
-  <hr>
-  <section>
-      <h3>Our Mission</h3>
-      <p>We aim to bring artists and art enthusiasts together to celebrate creativity and innovation. By providing a space for artists to publish their work and receive valuable feedback, we empower them to grow and succeed.</p>
-  </section>
-  <hr>
-  <hr>
   
-  <section class="hero">
-    <h2 id="contact">Contact Us</h2>
-    <p>We’d love to hear from you! Use the form below to get in touch with us.</p>
-</section>
-<section>
-    <form class="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-        
-        <button type="submit">Submit</button>
-    </form>
-</section>
-  </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2024 ArtHub. All Rights Reserved.</p>
-  </footer>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project 1:</strong> Art Critique Website - A full-stack solution for Art Lover Experience.</li><br>
+            <img src="image/fi.jpeg" alt="Pro Picture" class="Pictur"><br><br>
+            <li><strong>Project 2:</strong> Portfolio Website - Showcasing professional skills and experience.</li><br>
+            <img src="image/fe.jpeg" alt="Pro Picture" class="Pictur">
+           
+        </ul>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-4">Contact Me</h2>
+          <form id="contactForm">
+              <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required><br><br>
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required><br><br>
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <!-- Notification Area -->
+          <div id="notification" class="mt-3"></div>
+      </div>
+  </section>
+  
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+    </footer>
 </body>
+<script scr="script.js"></script>
 </html>
